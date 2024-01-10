@@ -41,6 +41,8 @@ export interface ItemUpdate {
   name: string
   /** Quantity */
   quantity: number
+  /** Id */
+  id: number
   /** Checked */
   checked: boolean
 }

@@ -11,6 +11,7 @@ class ItemCreate(ItemBase):
 
 
 class ItemUpdate(ItemBase):
+    id: int
     checked: bool
 
 
