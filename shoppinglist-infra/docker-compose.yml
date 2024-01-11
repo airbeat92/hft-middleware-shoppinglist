@@ -12,7 +12,7 @@ services:
       - "5555:5432"
 
   shoppinglist-service:
-    image: ghcr.io/airbeat92/middleware-shoppinglist-service:latest
+    image: ghcr.io/airbeat92/hft-middleware-shoppinglist-service:latest
     container_name: shoppinglist-service
     environment:
       HTTP_PORT: 8080
