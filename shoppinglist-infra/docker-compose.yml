@@ -12,10 +12,10 @@ services:
       - "5555:5432"
 
   shoppinglist-service:
-    image: ghcr.io/mrvxk/middleware-shoppinglist-service:latest
+    image: ghcr.io/airbeat92/middleware-shoppinglist-service:latest
     container_name: shoppinglist-service
     environment:
-      HTTP_PORT: 8080 # default is also 8080
+      HTTP_PORT: 8080
       DB_URL: postgres
       DB_PORT: 5432
       DB_NAME: db
@@ -28,7 +28,7 @@ services:
       - postgres
 
   shoppinglist-ui:
-    image: ghcr.io/mrvxk/middleware-shoppinglist-ui:latest
+    image: ghcr.io/airbeat92/middleware-shoppinglist-ui:latest
     container_name: shoppinglist-ui
     ports:
       - "4200:80"
