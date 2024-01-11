@@ -28,7 +28,7 @@ services:
       - postgres
 
   shoppinglist-ui:
-    image: ghcr.io/airbeat92/middleware-shoppinglist-ui:latest
+    image: ghcr.io/airbeat92/hft-middleware-shoppinglist-ui:latest
     container_name: shoppinglist-ui
     ports:
       - "4200:80"
