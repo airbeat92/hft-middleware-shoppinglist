@@ -5,4 +5,4 @@ COPY pyproject.toml poetry.lock* /app/
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
 COPY . /app
 EXPOSE 8000
-CMD ["poetry", "run", "python", "src/main.py"]
+CMD ["poetry", "run", "python", "src.main.py"]
