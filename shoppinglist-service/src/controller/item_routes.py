@@ -3,9 +3,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from src.schemas.item_schema import ItemCreate, ItemRead, ItemUpdate
-from src.database import get_db
-from src.service.item_service import create_item, get_items, get_item, update_item, delete_item
+from schemas.item_schema import ItemCreate, ItemRead, ItemUpdate
+from database import get_db
+from service.item_service import create_item, get_items, get_item, update_item, delete_item
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
