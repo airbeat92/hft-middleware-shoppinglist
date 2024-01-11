@@ -30,14 +30,16 @@ poetry install
 ### Start backend:
 
 Navigate to the shoppinglist-service directory.
-Install the dependencies with poetry: poetry install.
-Start the backend server: poetry run python -m src.main
+```bash
+poetry run python -m src.main
+```
 
 ### Start the frontend:
 
 Navigate to the shoppinglist-ui directory.
-Install the NPM packages: npm install.
+```bash
 Start the development environment with Vite: npm run dev.
+```
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
