@@ -22,9 +22,9 @@ services:
       DB_NAME: db
       DB_USERNAME: postgres
       DB_PASSWORD: secret
-      CORS_ORIGINS: localhost:4200
+      CORS_ORIGINS: http://localhost:4200
     ports:
-      - "8080:8080"
+      - "8080:8000"
     depends_on:
       - postgres
 
