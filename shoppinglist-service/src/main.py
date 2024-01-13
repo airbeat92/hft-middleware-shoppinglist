@@ -2,7 +2,7 @@ import logging
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from controller import item_routes
+from src.controller import item_routes
 app = FastAPI()
 
 app.add_middleware(
