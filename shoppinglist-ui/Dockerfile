@@ -1,9 +1,9 @@
 FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN yarn install
+RUN npm install
 COPY . .
-RUN yarn run build-only
+RUN npm run build-only
 
 # production stage
 FROM nginx:stable-alpine as production-stage

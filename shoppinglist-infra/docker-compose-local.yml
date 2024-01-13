@@ -26,7 +26,9 @@ services:
   shoppinglist-ui:
     build: ../shoppinglist-ui
     container_name: shoppinglist-ui
+    environment:
+      VITE_API_URL: http://localhost:8080
     ports:
-      - "4200:80"
+      - "80:80"
     depends_on:
       - shoppinglist-service
